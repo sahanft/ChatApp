@@ -13,18 +13,17 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
-<?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="root" prefHeight="635.0" prefWidth="374.0" style="-fx-background-color: #ffccff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.ChatController">
+<AnchorPane fx:id="root" prefHeight="635.0" prefWidth="374.0" style="-fx-background-color: #ffb3b3;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.Controller.ChatController">
    <children>
       <ScrollPane layoutX="14.0" layoutY="65.0" prefHeight="489.0" prefWidth="346.0">
          <content>
             <VBox fx:id="msgVbox" prefHeight="474.0" prefWidth="346.0" style="-fx-background-color: #ffe6ff;" />
          </content>
       </ScrollPane>
-      <AnchorPane layoutY="561.0" prefHeight="74.0" prefWidth="374.0" style="-fx-background-color: #4d004d;">
+      <AnchorPane layoutY="561.0" prefHeight="74.0" prefWidth="374.0" style="-fx-background-color: red;">
          <children>
-            <TextField fx:id="txtMsg" layoutX="4.0" layoutY="24.0" prefHeight="25.0" prefWidth="199.0" promptText="Msg" style="-fx-background-color: #800080;" />
+            <TextField fx:id="txtMsg" layoutX="4.0" layoutY="24.0" prefHeight="25.0" prefWidth="199.0" promptText="Msg" style="-fx-background-color: ff;" />
             <ImageView fitHeight="32.0" fitWidth="54.0" layoutX="212.0" layoutY="21.0" onMouseClicked="#send_on_action" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Assets/sended.png" />
@@ -65,14 +64,6 @@
          </children>
       </AnchorPane>
       <Label fx:id="lblName" layoutX="69.0" layoutY="14.0" textFill="RED" />
-      <Pane layoutX="14.0" layoutY="-26.0" prefHeight="74.0" prefWidth="346.0" style="-fx-background-color: #4d004d; -fx-background-radius: 30;">
-         <children>
-            <Label layoutX="99.0" layoutY="29.0" text="ChatRoom" textFill="WHITE">
-               <font>
-                  <Font name="System Bold" size="30.0" />
-               </font>
-            </Label>
-         </children>
-      </Pane>
+      <Pane layoutX="14.0" layoutY="-26.0" prefHeight="74.0" prefWidth="346.0" style="-fx-background-color: red;" />
    </children>
 </AnchorPane>
